@@ -15,17 +15,29 @@ header{position: absolute;width: 100%;left: 0;top: 0;padding-top: 40px;
 /*/header*/
 
 /*top-section*/
-.top-section{background: url('../images/top-blog-bg.jpg') center center no-repeat #fcfcfb;min-height: 1220px;padding-top: 308px;
+.top-section{background: url('../images/top-blog-bg.jpg') center center no-repeat #fcfcfb;min-height: 1220px;padding-top: 268px;
     .mbox{}
     .aside{float: left;
-        &.item-1{width: 47%;}
-        &.item-2{width: 53%;padding-top: 14px;}
+        &.item-1{width: 47.6%;}
+        &.item-2{width: 52.4%;padding-top: 14px;}
     }
-    .kust{margin-top: -158px;margin-left: -72px;
+    .kust{margin-top: -119px;margin-left: -72px;
         img{max-width: none;}
     }
-    h1{font-size: 130px;color: #141414;text-transform: uppercase;font-family: 'Futura',sans-serif;font-weight: 500;    line-height: 105px;margin-left: -91px;white-space: nowrap;
-        span{font-size: 25px;text-transform: uppercase;font-weight: 300;display: block;}
+    h1{font-size: 130px;color: #141414;text-transform: uppercase;font-family: 'Futura',sans-serif;font-weight: 500;line-height: 1;margin-left: -96px;display: block;letter-spacing: -1px;
+        span{font-size: 25px;text-transform: uppercase;font-weight: 300;display: block;padding-left: 13.2%;letter-spacing: 3px;margin-top: -10px;}
     }
+    .top-wrap{padding-top: 15px;}
+    .subtitle{
+        p{color: #000;}
+        ul{padding-top: 5px;}
+        li{position: relative;padding-left: 23px;color: #5c5c5c;padding-bottom: 3px;
+            &:after{content: '';position: absolute;top: 5px;left: 7px;height: 5px;width: 5px;border-radius: 50%;background-color: #5c5c5c;}
+        }
+    }
+    h2{font-weight: 700;color: #7b7b7b;font-size: 46px;text-transform: uppercase;padding-top: 8px;line-height: 43px;position: relative;margin-bottom: 81px;
+        span{font-size: 18px;font-weight: 500;position: absolute;top: calc(100% - 7px);left: 0;}
+    }
+    .arrow-down{height: 33px;width: 33px;transform: rotate(45deg);border-bottom: 2px solid #000;border-right: 2px solid #000;cursor: pointer;}
 }
 /*/top-section*/
