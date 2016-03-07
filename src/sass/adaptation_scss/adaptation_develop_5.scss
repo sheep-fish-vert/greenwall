@@ -55,7 +55,9 @@
 
 }
 @media screen and (max-width: 479px){
-
+.title{
+        &:before{display: none;}
+    }
 }
 @media screen and (max-width: 320px){
 
