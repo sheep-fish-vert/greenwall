@@ -13,6 +13,8 @@
 @media screen and (max-width: 1210px){
     /*phitomodule*/
         .phito-wrap{
+             &:after,
+            &:before{display: none;}
             .phito-align{
                 .content{
                    .content-row{ margin-bottom: 0;

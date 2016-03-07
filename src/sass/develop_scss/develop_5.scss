@@ -3,8 +3,8 @@
         &:after,
         &:before{ background-position: left top; background-repeat: no-repeat; content:''; display: block; position: absolute; right:0;}
         &:after{ background-image: url(../images/letter-bot.png);  width: 588px; height: 250px; bottom:-250px;}
-        &:before{ background-image: url(../images/letter-top.png); width: 464px; height: 227px; top:-227px;}
-        .phito-align{
+        &:before{ background-image: url(../images/letter-top.png); width: 464px; height: 227px; top:-227px; }
+        .phito-align{padding-top: 58px; padding-bottom: 69px;
             .content{
                 .content-row{ margin-bottom: 40px;
                     .content-box{max-width: 50%; float:left;
@@ -27,10 +27,37 @@
                 }
             }
         }
+        .title{color:#fff; padding-bottom: 70px;}
     }
 
-    .title{color:#fff;
+    .title{ padding-bottom: 37px;
+
         &:before{ background-position: left top; background-repeat: no-repeat; content:''; display: block; position: absolute; background-image: url(../images/title.png);  width: 361px; height: 82px;}
         h2{font:500 36px/48px 'Futura';}
     }
 /*END phitomodule*/
+/*practical*/
+    .practical{position: relative;
+        &:after{ background-image: url(../images/letter-bot.png);  width: 588px; height: 250px; top:0;background-position: left top; background-repeat: no-repeat; content:''; display: block; position: absolute; left:0; transform:scale(-1,1);}
+        .pract-wrap{
+            .pract-align{
+                .content{
+                    .row-one{
+                        .title{}
+                        .txt{}
+                    }
+                    .row-two{
+                        .items{
+                            .item{
+                                .item-align{
+                                    .img{}
+                                    .txt{}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+/*END practical*/
