@@ -15,7 +15,7 @@ header{position: absolute;width: 100%;left: 0;top: 0;padding-top: 40px;
 /*/header*/
 
 /*top-section*/
-.top-section{background: url('../images/top-blog-bg.jpg') center center no-repeat #fcfcfb;min-height: 1220px;padding-top: 268px;
+.top-section{background: url('../images/top-blog-bg.jpg') center center no-repeat #fcfcfb;min-height: 1209px;padding-top: 268px;
     .mbox{}
     .aside{float: left;
         &.item-1{width: 47.6%;}
@@ -41,3 +41,44 @@ header{position: absolute;width: 100%;left: 0;top: 0;padding-top: 40px;
     .arrow-down{height: 33px;width: 33px;transform: rotate(45deg);border-bottom: 2px solid #000;border-right: 2px solid #000;cursor: pointer;}
 }
 /*/top-section*/
+
+/*construction*/
+.construction{position: relative;
+    .title{color: #515151;
+        &:first-child{margin-top: -19px;}
+    }
+    .first-ul{padding-top: 60px;padding-bottom: 59px;
+        li{padding-left: 34px;padding-bottom: 3px;position: relative;
+            &:after{content: '';position: absolute;top: 5px;left: 22px;height: 5px;width: 5px;border-radius: 50%;background-color: #5c5c5c;}
+        }
+    }
+    .hr{border-color:#707070;border-bottom: none; }
+    .hr + .title{padding-top: 55px;text-align: right;
+        &:before{right: 0;transform: scale(-1,1);}
+    }
+    .items-wrap{padding-top: 59px;padding-bottom: 35px;
+        .item{width: 45.8%;
+            &.item-1{float: left;}
+            &.item-2{float: right;}
+        }
+        .item-img{overflow: hidden;
+            img{position: relative;left: 50%;transform: translateX(-50%);}
+        }
+        .item-title{font-size: 24px;color: #1c1c1c;padding: 17px 0px 17px;}
+        .item-text{font-weight: 300;color: #555555;font-size: 18px;line-height: 21px;}
+    }
+}
+/*/construction*/
+
+.corner{height: 282px;position: absolute;bottom: calc(100% - 19px);left: 0;width: 100%;overflow: hidden;
+    &.top-left{
+        .corner-wrap{background-color: #fff;position: absolute;top: 38%;left: -50px;height: 100%;width: calc(100% + 100px);overflow: hidden;transform: rotate(8deg);
+            &:after{position: absolute;top: -45px;left: 0;content: '';height: 250px;width: 593px;background: url('../images/letter-top-left.png') left top no-repeat;transform: rotate(-8deg);}
+        }
+    }
+    &.bottom-right{top: 100%;z-index: 10;height: 205px;
+        .corner-wrap{background-color: #fff;position: absolute;top: -50%;left: -50px;height: 100%;width: calc(100% + 100px);overflow: hidden;transform: rotate(8deg);
+            &:after{position: absolute;bottom: -30px;right: 0;content: '';height: 227px;width: 464px;background: url('../images/letter-top.png') left top no-repeat;transform: rotate(-8deg);}
+        }
+    }
+}
