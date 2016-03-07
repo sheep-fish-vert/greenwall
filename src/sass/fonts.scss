@@ -18,10 +18,10 @@
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 
 @include font-face('slick');
-@include font-face('Futura', 'Futura PT Bold', 700);
-@include font-face('Futura', 'Futura PT Demi', 800);
-@include font-face('Futura', 'Futura PT Heavy', 900);
-@include font-face('Futura', 'Futura PT Light', 300);
-@include font-face('Futura', 'Futura PT Medium', 500);
+@include font-face('Futura', 'FuturaPTBold', 700);
+@include font-face('Futura', 'FuturaPTDemi', 800);
+@include font-face('Futura', 'FuturaPTHeavy', 900);
+@include font-face('Futura', 'FuturaPTLight', 300);
+@include font-face('Futura', 'FuturaPTMedium', 500);
 
 /* /fonts*/
