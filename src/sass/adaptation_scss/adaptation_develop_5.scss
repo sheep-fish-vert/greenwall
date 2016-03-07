@@ -1,0 +1,60 @@
+@media screen and (max-width: 1920px){
+
+}
+@media screen and (max-width: 1600px){
+
+}
+@media screen and (max-width: 1366px){
+
+}
+@media screen and (max-width: 1280px){
+
+}
+@media screen and (max-width: 1210px){
+    /*phitomodule*/
+        .phito-wrap{
+            .phito-align{
+                .content{
+                   .content-row{ margin-bottom: 0;
+                        .content-box{max-width: 100%; float:none; margin-bottom: 20px; text-align: center; width: 100%;
+                            &:nth-child(2){
+                                .subbox{ margin:0 auto;
+                                    &:first-child{margin-bottom: 20px;}
+                                }
+                            }
+                        }
+                    }
+                    .second-row{ margin-bottom: 20px;
+                        .content-box{ text-align: center;
+                            &:nth-child(1){float:none; max-width: 100%;  }
+                            &:nth-child(2){float:none; margin-bottom: 20px;}
+                            &:nth-child(3){float:none;
+                                .subbox{float:none;  max-width: 100%;
+                                     &:nth-child(1){margin-bottom: 20px;}
+                                     &:nth-child(2){margin-left: 0;}
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    /*END phitomodule*/
+}
+@media screen and (max-width: 992px){
+
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 666px){
+
+}
+@media screen and (max-width: 479px){
+
+}
+@media screen and (max-width: 320px){
+
+}
