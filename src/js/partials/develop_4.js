@@ -22,9 +22,15 @@ try{
         initialize();
     };
 
+    function scrollReveal(){
+        window.sr = ScrollReveal();
+
+        sr.reveal('.scroll-anim', { duration: 200 });
+    }
+
     $(document).ready(function(){
 
-
+        scrollReveal();
     });
 
     $(window).load(function(){
