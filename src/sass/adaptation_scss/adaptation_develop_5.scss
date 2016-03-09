@@ -56,6 +56,7 @@
 }
 @media screen and (max-width: 479px){
 .title{
+        h2{font:500 31px/40px 'Futura';}
         &:before{display: none;}
     }
 }
