@@ -20,3 +20,32 @@
         .fixer-for-pp{padding-left: 86px; padding-right: 0;}
     }
 }
+
+
+//-----------------------------
+.wrap-asortiment{ background-image: url(../images/asortiment-bg.jpg); background-repeat: repeat-y; background-position: center center; padding: 100px 0;
+    .conteiner{
+        .title-text{font-size: 36px; font-family: "Futura", sans-serif; font-weight: 500; color: rgb(93, 93, 93); line-height: 1.2; position: relative; z-index: 5; padding-bottom: 50px;
+            &:after{content: ''; height: 75px; width: 220px; position: absolute; left: 0; top: 0; z-index: -1; background-image: url(../images/sm-title-bg.png);}
+        }
+        .content{ width: 100%;
+            .item-plank{ width: 31%; float: left; margin: 0 calc(7%/6); box-shadow: 0px 1px 1px 0px rgba(6, 6, 6, 0.35); background-color: white;
+                .top-part{ position: relative; overflow: hidden;
+                    .slider-item{ height: 425px; margin-bottom: 0;
+                        .si{ display: flex; align-items: center; vertical-align: middle;height: 425px;
+                            img{margin: 0 auto; }
+                        }
+                    }
+                }
+                .slick-dots { bottom: 30px;
+                    li button:before {content: ''; width: 10px; height: 10px; border-radius: 50%; border: 1px solid #b9b9b9; background-color: transparent; transition: all 0.3s;}
+                    li.slick-active button:before{content: ''; background-color: #83d1c5; border: 1px solid #83d1c5;}
+                }
+                .bot-part{background-color: #545454; min-height: 185px; color: white;text-align: center; padding: 10px;
+                    h5{font-size: 18px;font-family: "Futura", sans-serif; font-weight: 500;  line-height: 1.2; max-width: 320px; margin: 0 auto; padding-top: 32px; padding-bottom: 15px;}
+                    p{font-size: 16px; font-family: "Futura", sans-serif; font-weight: 300; color: rgb(238, 238, 238);  line-height: 1.2; max-width: 320px; margin: 0 auto; padding-bottom: 5px;}
+                }
+            }
+        }
+    }
+}
