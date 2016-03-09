@@ -1,7 +1,12 @@
 try{
 
     $(document).ready(function(){
+        $('.sliderius').slick({
+              dots: true,
+              infinite: true,
+              speed: 500
 
+            });
     });
 
     $(window).load(function(){
