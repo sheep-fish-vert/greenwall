@@ -1,0 +1,20 @@
+/* title-right */
+
+    .title{
+        &.text-right{text-align: right;
+            &:before{transform:scale(-1, 1);right:0;}
+        }
+    }
+
+/* /title-right */
+
+/* factory */
+
+    .factory{position: relative;
+        .corner.top-left .corner-wrap{top: 130px;}
+        .factory-wrap{
+
+        }
+    }
+
+/* /factory */
