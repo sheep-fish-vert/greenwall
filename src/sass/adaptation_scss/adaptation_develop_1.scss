@@ -10,19 +10,109 @@
 @media screen and (max-width: 1280px){
 
 }
+@media screen and (max-width: 1200px){
+
+    /* factory */
+
+        .factory{
+            .factory-bottom{
+                .factory-main{
+                    .factory-item{
+                        .factory-text{max-width: calc(100% - 120px);}
+                    }
+                }
+            }
+        }
+
+    /* /factory */
+
+}
 @media screen and (max-width: 1024px){
 
 }
 @media screen and (max-width: 992px){
 
+    /* factory */
+
+        .factory{
+            .factory-bottom{
+                .factory-main{
+                    .factory-item{width: 50%;
+                        &:last-child{width: 100%;max-width: 450px;}
+                    }
+                }
+            }
+        }
+
+    /* /factory */
+
 }
 @media screen and (max-width: 767px){
+
+    /* factory */
+
+        .factory{
+            .factory-top{
+                .factory-images-main{
+                    .factory-images{
+                        .factory-img-wrap{width: 50%;
+                            &.factory-img-special{float: none;display: flex;justify-content:space-around;width: 100%;}
+                        }
+                    }
+                }
+            }
+        }
+
+    /* /factory */
 
 }
 @media screen and (max-width: 666px){
 
+    /* factory */
+
+        .factory{
+            .factory-top{
+                .factory-images-main{padding: 0;
+                    .factory-images{width: 100%;margin:0;
+                        .factory-img-wrap{width: 100%;
+                            &.float-right, &.float-left{float: none;}
+                            &.factory-img-special{width: 100%;display: block;}
+                            img{display: block;margin: 0 auto 15px auto;max-width: 100%;}
+                        }
+                    }
+                }
+            }
+            .factory-bottom{
+                .factory-main{display: block;
+                    .factory-item{max-width: 450px;width: 100%;margin: 0 auto 35px auto;}
+                }
+            }
+        }
+
+    /* /factory */
+
 }
 @media screen and (max-width: 479px){
+
+    /* title */
+
+        .title{
+            &.text-right{text-align: center;}
+        }
+
+    /* /title */
+
+    /* factory */
+
+        .factory{
+            .factory-top{
+                .factory-text-wrap{
+                    .factory-text{text-align: center;}
+                }
+            }
+        }
+
+    /* /factory */
 
 }
 @media screen and (max-width: 320px){
