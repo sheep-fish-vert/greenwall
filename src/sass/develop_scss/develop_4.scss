@@ -72,13 +72,13 @@ header{position: absolute;width: 100%;left: 0;top: 0;padding-top: 40px;
 
 .corner{height: 282px;position: absolute;bottom: calc(100% - 19px);left: 0;width: 100%;overflow: hidden;
     &.top-left{
-        .corner-wrap{background-color: #fff;position: absolute;top: 38%;left: -50px;height: 100%;width: calc(100% + 100px);overflow: hidden;transform: rotate(8deg);
+        .corner-wrap{background-color: #fff;position: absolute;top: 138px;left: -50px;height: 100%;width: calc(100% + 100px);overflow: hidden;transform: rotate(8deg);
             &:after{position: absolute;top: -45px;left: 0;content: '';height: 250px;width: 593px;background: url('../images/letter-top-left.png') left top no-repeat;transform: rotate(-8deg);}
         }
     }
     &.bottom-right{top: 100%;z-index: 10;height: 205px;
-        .corner-wrap{background-color: #fff;position: absolute;top: -50%;left: -50px;height: 100%;width: calc(100% + 100px);overflow: hidden;transform: rotate(8deg);
-            &:after{position: absolute;bottom: -30px;right: 0;content: '';height: 227px;width: 464px;background: url('../images/letter-top.png') left top no-repeat;transform: rotate(-8deg);}
+        .corner-wrap{background-color: #fff;position: absolute;top: -82px;left: -50px;height: 100%;width: calc(100% + 100px);overflow: hidden;transform: rotate(5deg);
+            &:after{position: absolute;bottom: -30px;right: 0;content: '';height: 227px;width: 464px;background: url('../images/letter-top.png') left top no-repeat;transform: rotate(-5deg);}
         }
     }
 }
