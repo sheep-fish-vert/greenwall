@@ -1,11 +1,34 @@
 try{
+    function contactsMapInit(){
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(cordX,cordY);
+                var myOptions = {
+                    zoom: 17,
+                    center: myLatlng,
+                    disableDefaultUI: true,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    zoomControlOptions: {
+                       position: google.maps.ControlPosition.LEFT_BOTTOM
+                    }
+                }
+                var map = new google.maps.Map(document.getElementById('map'), myOptions);
+
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                });
+        }
+        initialize();
+    };
 
     $(document).ready(function(){
+
 
     });
 
     $(window).load(function(){
-
+        contactsMapInit();
     });
 
     $(window).resize(function(){
