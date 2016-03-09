@@ -14,10 +14,14 @@
 
 }
 @media screen and (max-width: 992px){
+    .wrap-asortiment .conteiner .content .item-plank { width: 100%; margin: 0 auto 30px; max-width: 400px;  float: none;}
 
 }
 @media screen and (max-width: 767px){
     .exemple-wrap .conteiner .item-col {float: none; width: 100%; max-width: 450px; margin: 0 auto; width: 100%; padding-left: 0; padding-right: 0;}
+    .footer .conteiner {display: flex; flex-wrap:wrap;  align-content: space-around ;
+        .convert{width: 100% !important; display: block; }
+    }
 
 }
 @media screen and (max-width: 666px){

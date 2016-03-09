@@ -1,6 +1,18 @@
 try{
 
     $(document).ready(function(){
+        console.log($('.slider-item').length);
+        $('.slider-item').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1
+        });
+
+
+        $('.go-up').click(function(event) {
+            $(scroller).animate({scrollTop:0},2000);
+        });
 
     });
 
