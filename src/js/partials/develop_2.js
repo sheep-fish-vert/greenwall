@@ -9,6 +9,11 @@ try{
             slidesToShow: 1
         });
 
+
+        $('.go-up').click(function(event) {
+            $(scroller).animate({scrollTop:0},2000);
+        });
+
     });
 
     $(window).load(function(){
