@@ -34,7 +34,8 @@
 
     /* factory */
 
-        .factory{
+        .factory{margin-top: 0;
+            .corner.top-left{height: 78px;}
             .factory-bottom{
                 .factory-main{
                     .factory-item{width: 50%;
