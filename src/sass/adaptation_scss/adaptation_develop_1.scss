@@ -105,9 +105,9 @@
     /* factory */
 
         .factory{
-            .factory-bottom{
-                .factory-main{
-                    .factory-item, .factory-item:last-child{max-width: 320px;}
+            .factory-top{
+                .factory-text-wrap{
+                    .factory-text{text-align: center;}
                 }
             }
         }
