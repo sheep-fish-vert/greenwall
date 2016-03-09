@@ -5,7 +5,6 @@ try{
               dots: true,
               infinite: true,
               speed: 500
-
             });
     });
 
