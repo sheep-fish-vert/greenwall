@@ -95,11 +95,51 @@
         }
     }
     /*/header*/
+
+    /*construction*/
+    .construction{
+        .title{padding-bottom: 12px;
+            h2{line-height: 36px;}
+        }
+        .first-ul{padding-top: 20px;padding-bottom: 30px;
+        }
+        .hr + .title{padding-top: 31px;
+        }
+        .items-wrap{
+            .item{float: none;width: 100%;margin-bottom: 30px;
+            }
+        }
+    }
+    /*/construction*/
 }
 @media screen and (max-width: 479px){
     /*top-section*/
     .top-section{min-height: 990px; }
     /*/top-section*/
+
+    /*construction*/
+    .construction{
+        .title{text-align: center;
+            h2{}
+        }
+        .first-ul{
+        }
+        .hr + .title{
+        }
+        .items-wrap{padding-top: 30px;padding-bottom: 0;
+            .item{
+                &.item-2{margin-bottom: 0;}
+            }
+        }
+    }
+    /*/construction*/
+
+    /*corner*/
+    .corner{height: 78px;
+        &.top-left{}
+        &.bottom-right{height: 68px;}
+    }
+    /*/corner*/
 }
 @media screen and (max-width: 320px){
 
