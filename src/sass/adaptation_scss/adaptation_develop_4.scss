@@ -5,7 +5,17 @@
 
 }
 @media screen and (max-width: 1366px){
-
+    /*integration*/
+    .integration{
+        .corner.bottom-right{height: 258px;
+        }
+        .item{
+            &.item-2{
+                .item-wrap{padding-top: 100px;}
+            }
+        }
+    }
+    /*/integration*/
 }
 @media screen and (max-width: 1280px){
     /*top-section*/
@@ -31,6 +41,18 @@
         }
     }
     /*/corner*/
+
+    /*integration*/
+    .integration{
+        .corner.bottom-right{height: 258px;
+        }
+        .item{
+            &.item-2{
+                .item-wrap{padding-top: 75px;}
+            }
+        }
+    }
+    /*/integration*/
 }
 @media screen and (max-width: 992px){
     /*top-section*/
@@ -67,6 +89,18 @@
         }
     }
     /*/corner*/
+
+    /*integration*/
+    .integration{
+        .corner.bottom-right{display: none;}
+        .item{width: 100%;
+            &.item-1{max-height: 600px;overflow: hidden;align-items: flex-end;}
+            &.item-2{padding-top: 35px;padding-bottom: 30px;
+                .item-wrap{padding-top: 0px;padding-left: 0;max-width: 100%;padding: 0 10px;}
+            }
+        }
+    }
+    /*/integration*/
 }
 @media screen and (max-width: 767px){
 
@@ -111,6 +145,17 @@
         }
     }
     /*/construction*/
+
+    /*integration*/
+    .integration{
+        .item{
+            &.item-1{max-height: 450px;}
+            &.item-2{padding-top: 35px;padding-bottom: 30px;
+                .item-wrap{padding-top: 0px;padding-left: 0;max-width: 100%;padding: 0 10px;}
+            }
+        }
+    }
+    /*/integration*/
 }
 @media screen and (max-width: 479px){
     /*top-section*/
@@ -120,11 +165,6 @@
     /*construction*/
     .construction{
         .title{text-align: center;
-            h2{}
-        }
-        .first-ul{
-        }
-        .hr + .title{
         }
         .items-wrap{padding-top: 30px;padding-bottom: 0;
             .item{
@@ -140,6 +180,17 @@
         &.bottom-right{height: 68px;}
     }
     /*/corner*/
+
+    /*integration*/
+    .integration{
+        .item{
+            &.item-1{max-height: 280px;}
+            &.item-2{padding-top: 35px;padding-bottom: 30px;
+                .title{padding-bottom: 25px;}
+            }
+        }
+    }
+    /*/integration*/
 }
 @media screen and (max-width: 320px){
 

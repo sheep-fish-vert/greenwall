@@ -44,9 +44,24 @@
         }
 
     /*END phitomodule*/
+    /*practical*/
+    .practical{
+        &:after{ display: none;}
+
+    }
+    /*END practical*/
 }
 @media screen and (max-width: 992px){
-
+/*practical*/
+    .practical{
+        .row-two{
+            .items{ flex-direction:column;
+                .item{  margin:20px auto;
+                }
+            }
+        }
+    }
+/*END practical*/
 }
 @media screen and (max-width: 767px){
 
@@ -55,10 +70,21 @@
 
 }
 @media screen and (max-width: 479px){
-.title{
-        h2{font:500 31px/40px 'Futura';}
-        &:before{display: none;}
+    .title{text-align: center;
+       h2{font:500 31px/40px 'Futura';}
+       &:before{display: none;}
     }
+    /*practical*/
+        .practical{
+            .row-one{
+                .txt{text-align: center; padding: 23px 0 23px;}
+            }
+            .row-two{
+                .items{ padding: 25px 0 25px;        }
+
+            }
+        }
+    /*END practical*/
 }
 @media screen and (max-width: 320px){
 
