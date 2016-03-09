@@ -50,6 +50,11 @@
 
     }
     /*END practical*/
+    /*construct-module*/
+    .construct-module{
+        &:after{ display: none;}
+    }
+    /*END construct-module*/
 }
 @media screen and (max-width: 992px){
 /*practical*/
