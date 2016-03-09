@@ -50,9 +50,9 @@
         }
         .row-two{
             .items{display: flex; justify-content:space-between; padding: 25px 0 130px;
-                .item{background-position: center center; background-repeat: no-repeat;  width: 100%; max-width: 350px; flex:1; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                .item{background-position: center center; background-repeat: no-repeat;  width: 100%; max-width: 350px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                     .item-align{ position: relative;display: flex; width: 100%; min-height: 311px;
-                        .txt{ width: 260px; height: 234px; background-color: #fff; margin:auto; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                        .txt{ width: 260px; height: 234px; background-color: #fff; margin: 38.5px auto; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                             p{font:300 16px/20px 'Futura';
                                 &:first-child{font:800 18px/22px 'Futura'; text-transform: uppercase; padding: 23px 0;}
                             }
