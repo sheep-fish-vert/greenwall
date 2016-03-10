@@ -1,6 +1,11 @@
 /*header*/
 header{position: absolute;width: 100%;left: 0;top: 0;padding-top: 40px;
     .addres{float: right;font-weight: 300;font-size: 16px;}
+    .header-button{float: right;
+        a{text-decoration: none;text-transform: uppercase;color: white;font-size: 14px;display: inline-block;border:1px solid white;border-radius: 23px;padding: 15px 27px;margin-top: -18px;margin-left: 20px;transition:all ease .2s;
+            &:hover{background-color: #fff;color: #282828;}
+        }
+    }
     .logo{padding-top: 10px;float: left;}
     nav{float: right;padding-top: 20px;
         li{display: inline-block;margin: 0 12px;
@@ -164,3 +169,46 @@ header{position: absolute;width: 100%;left: 0;top: 0;padding-top: 40px;
     }
 }
 /*/contacts*/
+
+.fancybox-close{top: 18px;right: 11px;background:none;
+    &:after,&:before{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%) rotate(45deg);width: 25px;height: 2px;background-color: #000;content: '';opacity: .8;}
+    &:before{transform: translate(-50%, -50%) rotate(-45deg);}
+}
+/*popupWrap*/
+.popupWrap{
+    .fancybox-skin{background-color: white;border-radius: 8px;}
+
+}
+#call-popup{width: 430px;margin:0 auto;outline: 1px solid red;border-radius: 8px;overflow: hidden;
+    .contact-form-title{color: #141414;text-align: center;font-size: 25px;padding: 25px 0px 25px;border-bottom: 1px solid #cdcdcd;margin-bottom: 55px;}
+    .input-wrap{max-width: 325px;width: 100%;padding: 0 10px 50px;margin:0 auto;}
+    .form_row.error{
+        input{border-color:red;
+            &::-webkit-input-placeholder {color:red;}
+            &:-moz-placeholder {color:red;}
+            &::-moz-placeholder {color:red;}
+            &:-ms-input-placeholder {color:red;}
+        }
+    }
+    input{width: 100%;height: 40px;line-height: 40px;font-size: 16px;color: #000;padding-left: 10px;border-radius: 5px;border:1px solid #cdcdcd;
+        &::-webkit-input-placeholder {color:#bdbdbd;}
+        &:-moz-placeholder {color:#bdbdbd;}
+        &::-moz-placeholder {color:#bdbdbd;}
+        &:-ms-input-placeholder {color:#bdbdbd;}
+
+    }
+    .errorText{position: absolute;color: red;left: 50%;transform: translateX(-50%);top: 100%;width: 100%;text-align: center;}
+    .form_input{position: relative;}
+    .contact-form-item{margin-bottom: 20px;}
+    .submit-button{
+        .contact-form-item{margin-bottom: 0;}
+        .contact-submit{width: 100%;background-color: #609e63;font-size: 16px;text-transform: uppercase;color: #fff;border:none;padding: 26px 0px;cursor: pointer;
+            &:hover{background-color: #5CAD60;}
+        }
+    }
+}
+.call_success{text-align: center;padding: 10px;
+    .call-title{font-size: 30px;margin-bottom: 10px;}
+    .call-subtitle{font-size: 25px;margin-bottom: 10px;}
+}
+/*/popupWrap*/

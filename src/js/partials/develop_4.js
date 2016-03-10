@@ -28,8 +28,17 @@ try{
         sr.reveal('.scroll-anim', { duration: 200 });
     }
 
-    $(document).ready(function(){
+    function fancybox(){
+        $('.fancybox').fancybox({
+            padding:0,
+            fitToView:false,
+            wrapCSS:'popupWrap',
+            autoSize:true,
+        })
+    }
 
+    $(document).ready(function(){
+        fancybox();
         scrollReveal();
     });
 
