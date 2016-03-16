@@ -1,6 +1,28 @@
 try{
 
+    function interiorSlider(){
+
+        $('.interior-slider').slick({
+            dots:true,
+            slidesToShow:1,
+            slidesToScroll:1,
+            adaptiveHeight: true,
+            draggable:false,
+            responsive: [
+                {
+                    breakpoint: 666,
+                    settings:{
+                        arrows:false
+                    }
+                }
+            ]
+        });
+
+    };
+
     $(document).ready(function(){
+
+        interiorSlider();
 
     });
 

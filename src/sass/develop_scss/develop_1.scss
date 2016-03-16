@@ -44,3 +44,46 @@
     }
 
 /* /factory */
+
+/* interior */
+
+    .interior{
+        .interior-main{padding-top: 55px;border-top: 1px solid #000;}
+        .title{
+            &:before{background-image:url(../images/interior-title-bg.png);background-repeat: no-repeat;width: 160px;height: 73px;}
+        }
+        .interior-text{font-size: 18px;line-height:22px;font-weight: 300;color:#484848;padding-top: 20px;margin-bottom: 75px;}
+        .interior-slider{padding:0 0px 30px 0px;
+            .interior-slider-item{padding:0px 115px 20px 115px;
+                .slider-list{border: 1px solid #e9e9e9;background-image:url(../images/slider-bg.png);background-repeat:no-repeat;background-position: right bottom;padding:35px 35px 45px 35px;box-shadow:0px 1px 2px 0 rgba(15, 15, 15, .35);min-height: 282px;
+                    li{position: relative;padding-left: 20px;font-size: 18px;color:#969696;font-weight: 300;margin-bottom: 18px;text-shadow:0 0 0px #fff;
+                        &:before{content:'';display: block;position: absolute;left:0;top:6px;width: 10px;height: 10px;border-radius: 50%;background-color:#7e9e4e;}
+                        &:last-child{margin-bottom: 0;}
+                    }
+                }
+            }
+            .slick-arrow{width: 22px;height: 44px;background-image:url(../images/interior-arrow.png);font-size:0;color:transparent;z-index: 2;top:125px;transition:opacity 300ms ease;
+                &:before{display: none;}
+                &:hover{opacity: .5;}
+            }
+            .slick-prev{background-position: left top;left: 10px;}
+            .slick-next{background-position: right top;right:10px;}
+            .slick-dots{left:0;bottom:0;
+                li{width: auto;height: auto;
+                    button{padding:0;width: 10px;height: 10px;border:1px solid #000000;border-radius: 50%;
+                        &:before{content:'';font-size: 0;color:transparent;width: 10px;height: 10px;border-radius:50%;position: absolute;left:calc(50% - 5px);top:calc(50% - 5px);display: block;background-color:#000;transform:scale(0);transition:transform 300ms ease;}
+                    }
+                    &.slick-active{
+                        button{
+                            &:before{transform:scale(1);}
+                        }
+                    }
+                }
+            }
+        }
+        .interior-images{display: flex;justify-content:space-between;margin-bottom: 20px;padding-top:30px;
+            .interior-img{width: calc(50% - 20px);}
+        }
+    }
+
+/* /interior */

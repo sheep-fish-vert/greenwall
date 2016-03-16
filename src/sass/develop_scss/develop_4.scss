@@ -116,20 +116,24 @@ header{position: absolute;width: 100%;left: 0;top: 0;padding-top: 40px;
 
 /*complectation*/
 .complectation{position: relative;padding-top: 55px;padding-bottom: 95px;
+    .title{
+        sup{vertical-align: super;font-size: 20px;}
+    }
     &:after{background-image: url(../images/letter-bot.png);width: 588px;height: 250px;top: 0;background-position: left top;background-repeat: no-repeat;content: '';display: block;position: absolute;right: 0;pointer-events:none;}
-    .items-wrap{display: flex;flex-wrap:wrap;justify-content: space-between;padding-top: 51px;
+    .items-wrap{display: flex;flex-wrap:wrap;justify-content: space-between;padding-top: 51px;padding-bottom: 50px;
         .item{width: 300px;text-align: center;}
         .item-img{
             img{display: block;margin:0 auto;}
         }
         .item-text{font-size: 18px;color: #a6a6a6;padding-top: 22px;line-height: 21px;}
-    }}
+    }
+}
 /*/complectation*/
 
 /*roskosh*/
 .roskosh{position: relative;display: flex;flex-direction:row;flex-wrap:wrap;overflow: hidden;
     .corner{top: 0;z-index: 15;
-        .corner-wrap{top: -136px;transform: rotate(-8deg);
+        .corner-wrap{top: -150px;transform: rotate(-8deg);
             &:after{background: url("../images/letter-top.png") left top no-repeat;height: 227px;width: 464px;top: auto;bottom: 0;transform: scale(-1,1) rotate(0deg);}
         }
     }
