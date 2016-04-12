@@ -8,6 +8,15 @@ try{
             slidesToShow: 1
         });
 
+        $(".fancybox-button").fancybox({
+            prevEffect		: 'none',
+            nextEffect		: 'none',
+            closeBtn		: false,
+            helpers		: {
+                title	: { type : 'inside' },
+                buttons	: {}
+            }
+        });
 
         $('.go-up').click(function(event) {
             $(scroller).animate({scrollTop:0},2000);
