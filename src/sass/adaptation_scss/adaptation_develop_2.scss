@@ -11,7 +11,8 @@
 
 }
 @media screen and (max-width: 1024px){
-
+    .phitomodule .convert .row-small .item { width: 25%; max-width: 228px; }
+    .phitomodule .convert .row-big .item { width: 50%; max-width: 390px; }
 }
 @media screen and (max-width: 992px){
     .wrap-asortiment .conteiner .content .item-plank { width: 100%; margin: 0 auto 30px; max-width: 400px;  float: none;}
@@ -22,6 +23,8 @@
     .footer .conteiner {display: flex; flex-wrap:wrap;  align-content: space-around ;
         .convert{width: 100% !important; display: block; }
     }
+    
+    .phitomodule .convert .row-small .item { width: 50%; max-width: 228px; }
 
 }
 @media screen and (max-width: 666px){
