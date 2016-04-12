@@ -2,14 +2,14 @@
 
 // Default Variables
 
-$slick-font-path: "./fonts/" !default;
-$slick-font-family: "slick" !default;
+/*$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;*/
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "←" !default;
-$slick-next-character: "→" !default;
+$slick-prev-character: "" !default;
+$slick-next-character: "" !default;
 $slick-dot-character: "•" !default;
 $slick-dot-size: 6px !default;
 $slick-opacity-default: 0.75 !default;
@@ -24,7 +24,7 @@ $slick-opacity-not-active: 0.25 !default;
         @return url($slick-loader-path + $url);
     }
 }
-
+/*
 @function slick-font-url($url) {
     @if function-exists(font-url) {
         @return font-url($url);
@@ -32,7 +32,7 @@ $slick-opacity-not-active: 0.25 !default;
     @else {
         @return url($slick-font-path + $url);
     }
-}
+}*/
 
 /* Slider */
 
@@ -43,6 +43,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 /* Icons */
+/*
 @if $slick-font-family == "slick" {
     @font-face {
         font-family: "slick";
@@ -52,7 +53,7 @@ $slick-opacity-not-active: 0.25 !default;
         font-style: normal;
     }
 }
-
+*/
 /* Arrows */
 
 .slick-prev,
@@ -88,7 +89,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev:before, .slick-next:before {
-    font-family: $slick-font-family;
+    /*font-family: $slick-font-family;*/
     font-size: 20px;
     line-height: 1;
     color: $slick-arrow-color;
@@ -172,7 +173,7 @@ $slick-opacity-not-active: 0.25 !default;
                 content: $slick-dot-character;
                 width: 20px;
                 height: 20px;
-                font-family: $slick-font-family;
+                /*font-family: $slick-font-family;*/
                 font-size: $slick-dot-size;
                 line-height: 20px;
                 text-align: center;
