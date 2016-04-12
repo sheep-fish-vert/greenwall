@@ -1,3 +1,4 @@
+// exemple block
 .exemple-wrap{ background-image: url(../images/exampleBG.jpg); padding: 365px 0 260px 0;
     .conteiner{width: 100%;
         .item-col{float: left; width: 50%; padding:0 15px 0 10px;
@@ -68,5 +69,29 @@
             a{padding: 0 10px;}
         }
         .big{width: 40%;text-transform: uppercase; line-height: 30px;}
+    }
+}
+
+// phitomodule block
+
+.phitomodule{
+    .text-content{ font-size: 18px; font-family: "Futura", sans-serif; color: rgb(255, 254, 254);  line-height: 1.2; padding-bottom: 30px; font-weight: 300;}
+    .convert{        
+        .row-big, .row-small{display: flex; flex-wrap: wrap; align-content: space-around; justify-content: space-around; width: 100%;
+            .item{ padding: 5px; width: 20%;
+                a{position: relative; display: block; text-decoration: none;
+                    &:hover{
+                        .hovered-block{opacity: 1; }
+                    }
+                }
+                .hovered-block{position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255,255,255,0.5); opacity: 0; transition: all 0.3s;
+                    img{position: absolute; top: calc(50% - 16px); left: calc(50% - 16px);}
+                }
+            }
+        }
+        .row-big{
+            .item{ width: calc(100%/3);}
+        }
+        
     }
 }
