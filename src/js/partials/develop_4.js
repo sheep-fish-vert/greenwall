@@ -37,7 +37,29 @@ try{
         })
     }
 
+    function fixedHeader(){
+        if( $(window).width() >= 480 ){
+            function fHead(){
+                if( $(window).scrollTop()>0 ){
+                    $('header').addClass('fixed');
+                }else{
+                    $('header').removeClass('fixed');
+                }
+                if( $(window).scrollTop()>$('.exemple').offset().top && $(window).scrollTop() < $('.exemple').offset().top + $('.exemple').outerHeight() - 200 || $(window).scrollTop()>$('.phitomodule').offset().top && $(window).scrollTop() < $('.phitomodule').offset().top + $('.phitomodule').outerHeight() - 100 || $(window).scrollTop()>$('.roskosh').offset().top && $(window).scrollTop() < $('.roskosh').offset().top + $('.roskosh').outerHeight() - 100){
+                    $('header nav , .addres, .logo').addClass('reverse');
+                }else{
+                    $('header nav , .addres, .logo').removeClass('reverse');
+                }
+            };
+            fHead();
+            $(window).scroll(function(event) {
+                fHead();
+            });
+        }
+    }
+
     $(document).ready(function(){
+        fixedHeader();
         fancybox();
         scrollReveal();
     });
