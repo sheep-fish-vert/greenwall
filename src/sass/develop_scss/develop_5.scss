@@ -1,6 +1,5 @@
 /*phitomodule*/
     .phito-wrap{ background-image: url(../images/fito-bg.jpg); background-position: left top; background-repeat-y: repeat; position: relative;
-        &:after,
         &:before{ background-position: left top; background-repeat: no-repeat; content:''; display: block; position: absolute; right:0; z-index: 50;}
         &:after{ background-image: url(../images/letter-bot.png);  width: 588px; height: 250px; bottom:-250px;}
         &:before{ background-image: url(../images/letter-top.png); width: 464px; height: 227px; top:-227px; }

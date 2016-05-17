@@ -45,7 +45,7 @@ try{
                 }else{
                     $('header').removeClass('fixed');
                 }
-                if( $(window).scrollTop()>$('.exemple').offset().top && $(window).scrollTop() < $('.exemple').offset().top + $('.exemple').outerHeight() - 200 || $(window).scrollTop()>$('.phitomodule').offset().top && $(window).scrollTop() < $('.phitomodule').offset().top + $('.phitomodule').outerHeight() - 100 || $(window).scrollTop()>$('.roskosh').offset().top && $(window).scrollTop() < $('.roskosh').offset().top + $('.roskosh').outerHeight() - 100){
+                if( $(window).scrollTop()>$('.exemple').offset().top && $(window).scrollTop() < $('.exemple').offset().top + $('.exemple').outerHeight() - 200 || $(window).scrollTop()>$('.phitomodule').offset().top && $(window).scrollTop() < $('.phitomodule').offset().top + $('.phitomodule').outerHeight() - 100 || $(window).scrollTop()>$('.roskosh').offset().top && $(window).scrollTop() < $('.roskosh').offset().top + $('.roskosh').outerHeight() - 100 || $(window).scrollTop()>$('.production').offset().top && $(window).scrollTop() < $('.production').offset().top + $('.production').outerHeight() - 100){
                     $('header nav , .addres, .logo').addClass('reverse');
                 }else{
                     $('header nav , .addres, .logo').removeClass('reverse');
@@ -58,7 +58,16 @@ try{
         }
     }
 
+    function productionTabs(){
+        $('.production .tabItem').not(':first').hide();
+        $('.production .tab').click(function(){
+            $('.production .tab').removeClass('active').eq($(this).index()).addClass('active');
+            $('.production .tabItem').hide().eq($(this).index()).fadeIn();
+        }).eq(0).addClass('active');
+    }
+
     $(document).ready(function(){
+        productionTabs();
         fixedHeader();
         fancybox();
         scrollReveal();
