@@ -256,3 +256,10 @@ header{position: absolute;width: 100%;left: 0;top: 0;padding-top: 40px;z-index: 
         }
     }
 }
+
+// copy
+.copy{position: absolute;left: 50%;bottom: 10px;transform: translateX(-50%);text-align: center;margin: 0 auto;
+    a{color: white;text-decoration: none;
+        &:hover{text-decoration: underline;}
+    }
+}

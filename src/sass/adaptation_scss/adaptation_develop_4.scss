@@ -185,6 +185,9 @@
 
     .production .production-tabs .tabs{    flex-direction: column;padding: 10px 0px;}
     .production .production-tabs .tabs .tab{    width: 100%;border-radius: 15px;}
+
+    // copy
+    .copy{position: static;transform: none;}
 }
 @media screen and (max-width: 666px){
     /*top-section*/
